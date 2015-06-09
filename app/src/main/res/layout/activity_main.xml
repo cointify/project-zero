@@ -22,14 +22,15 @@
         android:text="@string/spotify_streamer_label"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-
         android:textAllCaps="true"
         android:onClick="onClickLaunchSpotifyStreamer"
         android:layout_below="@+id/nanodegree_apps"
         android:background="#F08C35"
         android:textColor="#fff"
         android:layout_marginBottom="6dp"
-        android:layout_marginLeft="6dp"/>
+        android:layout_marginLeft="6dp"
+        style="@style/Base.Widget.AppCompat.Button"
+        />
 
     <Button
         android:id="@+id/scores_button"
