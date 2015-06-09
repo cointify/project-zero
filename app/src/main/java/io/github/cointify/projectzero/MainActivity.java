@@ -39,26 +39,30 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void onClickLaunchSpotifyStreamer(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my spotify streamer app", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my spotify streamer app");
     }
 
     public void onClickLaunchScores(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my scores app", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my scores app");
     }
 
     public void onClickLaunchLibrary(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my library app", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my library app");
     }
 
     public void onClickLaunchBuildItBigger(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my build it bigger", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my build it bigger");
     }
 
     public void onClickLaunchBaconReader(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my bacon reader", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my bacon reader");
     }
 
     public void onClickLaunchCapstone(View view) {
-        Toast.makeText(getApplicationContext(), "This button will launch my capstone: my own app", Toast.LENGTH_SHORT).show();
+        showToastMessage("This button will launch my capstone: my own app");
+    }
+
+    private void showToastMessage(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

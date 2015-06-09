@@ -1,8 +1,28 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <color name="actionbar_bg_color">#6A1B9A</color>
+    <color name="actionbar_text_color">#F3E5F5</color>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/PzActionBarBackground</item>
+
+        <item name="actionBarStyle">@style/PzActionBarBackground</item>
     </style>
 
+    <style name="PzActionBarBackground"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionbar_bg_color</item>
+        <item name="android:titleTextStyle">@style/PzActionBarTitleText</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_text_color</item>
+
+        <item name="background">@color/actionbar_bg_color</item>
+        <item name="titleTextStyle">@style/PzActionBarTitleText</item>
+        <item name="actionMenuTextColor">@color/actionbar_text_color</item>
+    </style>
+
+    <style name="PzActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+        <item name="android:textColor">@color/actionbar_text_color</item>
+    </style>
 </resources>
